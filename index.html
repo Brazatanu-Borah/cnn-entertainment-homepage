@@ -4,23 +4,114 @@
   <head>
     <meta charset="UTF-8" />
     <title>CNN-ENTERTAINMENT Homepage Clone UI | HTML CSS</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="styles/header.css " />
     <link rel="stylesheet" href="styles/main.css " />
+    <link rel="stylesheet" href="styles/footer.css " />
   </head>
 
   <body>
-    <header>
-      <div class="wrapper"></div>
+
+    <!-- HEADER SECTION -->
+    <header class="header-brand-section">
+      <div class="wrapper">
+        <nav>
+          <div class="burger-icon">
+            <input type="checkbox" id="openSidebarMenu" />
+            <label for="openSidebarMenu" class="sidebarIconToggle">
+              <div class="spinner top"></div>
+              <div class="spinner middle"></div>
+              <div class="spinner bottom"></div>
+            </label>
+          </div>
+          <a href="#"><img src="assets/icons/CNN_logo.png" alt="An icon representing the logo for CNN" /></a>
+          <ul>
+            <li><a href="#">Entertainment</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">Television</a></li>
+            <li><a href="#">Celebrity</a></li>
+          </ul>
+        </nav>
+        <ul class="navbar">
+          <li><a href="#" class="navbar-links">Watch</a></li>
+          <li><a href="#" class="navbar-links">Listen</a></li>
+          <li><a href="#" class="navbar-links">Live TV</a></li>
+          <li class="search-container">
+            <img src="assets/icons/search_icon_white.svg" alt="An icon of a magnifying glass depicting search" />
+          </li>
+          <li class="sign-in-btn"><button>Sign In</button></li>
+        </ul>
+      </div>
     </header>
+
+
+    <!-- MAIN SECTION -->
     <main>
-      <div class="wrapper"></div>
+      <div class="wrapper">
+        <h1>Entertainment</h1>
+        <div class="content-column-wrapper">
+          <div class="content-column-1">
+            1
+          </div>
+          <div class="content-column-2">
+            2
+          </div>
+          <div class="content-column-3">
+            <figure class="sidepanel-item ad-image">
+              <img src="assets/images/ad-1.jpg" alt="" />
+            <figure/>
+            <figure class="sidepanel-item">
+              <img src="assets/images/jessica-lange.jpg" alt="Jessica Lange" />
+              <caption>Jessica Lange comes full circle as a Broadway lioness in &ldquo;The Great Lillian Hall&rdquo;</caption>
+            </figure>
+            <figure class="sidepanel-item">
+              <img src="assets/images/george-clooney.jpg" alt="George" />
+              <caption>George Clooney and Brad Pitt reunite in action-packed &ldquo;Wolfs&rdquo; trailer</caption>
+            </figure>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper">
+        <h2>Now Playing</h2>
+        <div class="thumbnail-wrapper">
+          <div class="content-column-1">
+            1
+          </div>
+          <div class="content-column-2">
+            2
+          </div>
+          <div class="content-column-3">
+            3
+          </div>
+        </div>
+      </div>
+      <div class="wrapper">
+        <h2>In case you missed it</h2>
+        <div class="content-column-wrapper">
+          <div class="content-column-1">
+            1
+          </div>
+          <div class="content-column-2">
+            2
+          </div>
+          <div class="content-column-3">
+            <figure class="sidepanel-item ad-image">
+              <img src="assets/images/ad-2.jpg" alt="" />
+            <figure/>
+          </div>
+        </div>
+      </div> 
     </main>
+
 
     <!-- FOOTER SECTION -->
     <footer>
       <div class="wrapper">
         <div class="search-container">
           <input type="search" placeholder="Search CNN..." />
-          <img class="search-icon" src="assets/icons/search_icon.svg" alt="An icon of a magnifying glass depicting search" />
+          <img class="search-icon" src="assets/icons/search_icon_black.svg" alt="An icon of a magnifying glass depicting search" />
         </div>
         <section class="footer-row">
           <div>
@@ -218,8 +309,8 @@
         </section>
         <section class="footer-brand-section">
           <figure>
-            <img src="assets/icons/CNN_logo.png" alt="An icon representing the logo for CNN" />
-            <span>Entertainment</span>
+            <a href="#"><img src="assets/icons/CNN_logo.png" alt="An icon representing the logo for CNN" /></a>
+            <span><a href="#">Entertainment</a></span>
           </figure>
           <ul class="navbar">
             <li><a href="#" class="navbar-links">Watch</a></li>
@@ -246,7 +337,7 @@
         </section>
         <section class="footer-copyright-section">
           <p>&copy; 2024 Cable News Network. A Warner Bros. Discovery Company. All Rights Reserved.</p>
-          <p>CNN Sans ™ & © 2016 Cable News Network.</p>
+          <p>CNN Sans &trade; &amp; &copy; 2016 Cable News Network.</p>
         </section>
       </div>
     </footer>
