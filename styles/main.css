@@ -5,9 +5,10 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Tahoma, Arial, Helvetica, sans-serif;
   background-color: #fff;
   font-size: 14px;
+  letter-spacing: -0.3px;
 }
 
 .wrapper {
@@ -16,38 +17,65 @@ body {
 }
 
 main {
-  padding: 50px 0;
+  padding: 40px 0 0 0;
 }
 
-.content-column-wrapper, .thumbnail-wrapper {
+main img {
+  display: block;
+  width: 100%;
+}
+
+main img:hover {
+  opacity: 0.7;
+}
+
+.ad-image img:hover {
+  opacity: 1;
+}
+
+.content-column-wrapper,
+.thumbnail-wrapper {
   display: flow-root;
 }
 
-.content-column-wrapper img, .thumbnail-wrapper img {
-  display: block;
-  width: 100%;
+
+.thumbnail-wrapper-1,
+.thumbnail-wrapper-2,
+.thumbnail-wrapper-3,
+.thumbnail-wrapper-4 {
+  float: left;
+  /* outline: solid 1px grey; */
+  width: 24%;
+}
+
+.thumbnail-wrapper-2,
+.thumbnail-wrapper-3,
+.thumbnail-wrapper-4 {
+  margin-left: 18px;
 }
 
 .content-column-1,
 .content-column-2,
 .content-column-3 {
   float: left;
-  outline: solid 1px grey;
+  /* outline: solid 1px grey; */
 }
 
 .content-column-1 {
   float: left;
-  width: 49%;
+  width: 48%;
 }
 
-.content-column-2 {
+.content-column-2,
+.thumbnail-wrapper-3 {
   float: left;
   width: 24%;
 }
 
-.content-column-3 {
+.content-column-3,
+.thumbnail-wrapper-4 {
   float: left;
-  width: 23%;
+  width: 24%;
 }
 
 .content-column-1,
@@ -55,6 +83,101 @@ main {
   margin-right: 25px;
 }
 
-.ad-image {
-  padding: 10px;
+.brand-content .wrapper {
+  display: flow-root;
+}
+
+.brands-column {
+  /* outline: solid 1px grey; */
+  float: left;
+  width: 32%;
+  margin-right: 25px;
+}
+
+.brands-column:last-child {
+  margin-right: 0;
+}
+
+.section {
+  margin: 40px 0;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+
+main figure a {
+  color: rgba(0, 0, 0, 0.801);
+  font-weight: 700;
+  font-size: 20px;
+  display: inline-block;
+  margin: 0 0 25px 0;
+  text-decoration: none;
+}
+
+.brands-column a {
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+main figure a:hover,
+.brands-column a:hover {
+  text-decoration: underline;
+}
+
+main .content-column-1 p a,
+main .content-column-2 p a {
+  display: inline-block;
+  line-height: 1.5;
+  margin-top: 10px;
+  padding: 10px 0;
+  border-top: solid 1px rgba(192, 192, 192, 0.404);
+  font-size: 18px;
+  color: rgba(12, 12, 12, 0.712);
+  text-decoration: none;
+}
+
+main .top-content .content-column-1 p a {
+  border: none;
+}
+
+main .content-column-1 p a:hover,
+main .content-column-2 p a:hover {
+  text-decoration: underline;
+}
+
+.marketing-banner .wrapper {
+  padding: 0 200px;
+  margin-bottom: 50px;
+}
+
+.media-object > div {
+  display: flow-root;
+  padding: 15px 0;
+  border-top: solid 1px rgba(192, 192, 192, 0.404);
+}
+
+.media-object img {
+  width: 20%;
+  float: left;
+}
+
+.media-object p {
+  width: 75%;
+  float: left;
+  position: relative;
+  bottom: 25px;
+  margin-left: 15px;
 }
